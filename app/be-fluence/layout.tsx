@@ -42,9 +42,9 @@ export default function BeFluenceLayout({
   return (
     <div className="relative flex w-full flex-col overflow-hidden bg-linear-to-b from-background from-40% to-teal-500/10">
       <motion.nav
-        initial={{ opacity: 0, x: -20 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.5, delay: 0.7 }}
+        initial={{ opacity: 0, x: -20 , filter: "blur(10px)" }}
+        animate={{ opacity: 1, x: 0 , filter: "blur(0px)" }}
+        transition={{ duration: 0.5, delay: 1.5 }}
         className="fixed top-1/2 left-4 z-50 flex w-fit -translate-y-1/2 flex-col items-center gap-2 rounded-full border p-1"
       >
         {" "}

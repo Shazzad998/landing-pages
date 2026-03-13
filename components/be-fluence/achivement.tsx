@@ -24,8 +24,9 @@ const Achivement = ({ icon, value, label, delay = 0 }: Props) => {
       <div className="flex items-center gap-2 text-4xl">
         <Icon icon={icon} className="size-8 text-teal-500" />
         <span className="font-medium">
-          <NumberTicker value={extractNumberFromValue(value)}  delay={delay}/>
-          {extractStringFromValue(value)}
+          {/* <NumberTicker value={extractNumberFromValue(value)}  delay={delay}/>
+          {extractStringFromValue(value)} */}
+          {value}
         </span>
       </div>
       <p className="text-sm">{label}</p>
